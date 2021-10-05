@@ -27,14 +27,16 @@ void onWebSocketEvent(uint8_t num,
       IPAddress ip = websocket.remoteIP(num);
       Serial.printf("[%u] Connection from ", num);
       Serial.println(ip.toString());
-      // Respond once when connection established
-      websocket.sendTXT(num, "hello");
       break;
     }
     
     case WStype_TEXT:
       // Echo text message back to client
       websocket.sendTXT(num, payload);
+      break;
+
+    case WStype_PING:
+      // Serial.println("PING Received");
       break;
 
     // For everything else: do nothing
