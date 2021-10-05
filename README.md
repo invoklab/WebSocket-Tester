@@ -34,5 +34,5 @@ This library is still a work in progress. There may be some breaking changes in 
 - Most of the time you will be automatically redirected to configuration page, if not, open browser and go to __1.1.1.1__
 - Click on __Configure WiFi__, tap the SSID you want to connect to or manually enter SSID and password. Once you are done, save, then the ESP will restart.
 - Open the app and enter IP Address printed on serial monitor to the Address Bar.
-- Press __Connect__, when connection is established, server will send __'hello'__, and the app status will change to __'CONNECTED'__
+- Press __Connect__, when connection is established, the app status will change to __'CONNECTED'__.
 - Test connection by sending message. Server will respond or echo back the same message.
